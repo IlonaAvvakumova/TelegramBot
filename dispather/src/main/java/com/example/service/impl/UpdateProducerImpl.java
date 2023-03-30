@@ -18,6 +18,5 @@ public class UpdateProducerImpl implements UpdateProducer {
     public void produce(String rabbitQueue, Update update) {
         log.debug(update.getMessage().getText());
         rabbitTemplate.convertAndSend(rabbitQueue, update);
-
     }
 }
