@@ -8,7 +8,9 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 import javax.persistence.*;
 
-@Data
+@Setter
+@Getter
+@EqualsAndHashCode(exclude =  "id")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
